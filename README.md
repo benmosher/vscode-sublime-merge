@@ -11,7 +11,7 @@ This extension aspires to switch you quickly to Sublime Merge for common Git tas
 
 ## Requirements
 
-Sublime Merge + `smerge` CLI bindind set up.
+Sublime Merge + `smerge` CLI binding set up.
 
 ## Extension Settings
 
