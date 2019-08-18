@@ -1,6 +1,10 @@
 {
-	"name": "sublime-merge-integration",
+	"name": "vscode-sublime-merge-integration",
 	"displayName": "Sublime Merge Integration",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/benmosher/vscode-sublime-merge.git"
+	},
 	"author": {
 		"name": "Ben Mosher",
 		"email": "me@benmosher.com",
