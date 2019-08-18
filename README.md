@@ -7,6 +7,7 @@ This extension aspires to switch you quickly to Sublime Merge for common Git tas
 ## Features
 
 - `Sublime Merge: Blame` command: blame the active file/line.
+- `Sublime Merge: File History (Log)` command: show the active file's history.
 
 ## Requirements
 

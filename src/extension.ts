@@ -18,7 +18,23 @@ export function activate(context: vscode.ExtensionContext) {
 		await execSmerge(`blame "${uri.fsPath}" ${currentCursor.line}`, { cwd: cwdFolder && cwdFolder.uri })
 	});
 
+	const log = vscode.commands.registerCommand('sublime-merge.log', async () => {
+		const activeEditor = vscode.window.activeTextEditor
+		if (!activeEditor) {
+			console.warn("no editor!")
+			return
+		}
+
+		const uri = activeEditor.document.uri
+		const folders = vscode.workspace.workspaceFolders
+		// todo: some more reliable way to get the git base location for the active file
+		const cwdFolder = folders && folders.find(f => uri.fsPath.startsWith(f.uri.fsPath))
+
+		await execSmerge(`log "${uri.fsPath}"`, { cwd: cwdFolder && cwdFolder.uri })
+	});
+
 	context.subscriptions.push(blame);
+	context.subscriptions.push(log);
 }
  
 function execSmerge(commandlet: string, options?: { cwd?: vscode.Uri }) {

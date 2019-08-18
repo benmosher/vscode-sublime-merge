@@ -20,7 +20,8 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:sublime-merge.blame"
+		"onCommand:sublime-merge.blame",
+		"onCommand:sublime-merge.log"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
@@ -28,12 +29,20 @@
 			{
 				"command": "sublime-merge.blame",
 				"title": "Sublime Merge: Blame"
+			},
+			{
+				"command": "sublime-merge.log",
+				"title": "Sublime Merge: File History (Log)"
 			}
 		],
 		"menus": {
 			"commandPalette": [
 				{
 					"command": "sublime-merge.blame",
+					"when": "resourceScheme == file"
+				},
+				{
+					"command": "sublime-merge.log",
 					"when": "resourceScheme == file"
 				}
 			]

@@ -7,3 +7,4 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [Unreleased]
 
 - `Sublime Merge: Blame` command.
+- `Sublime Merge: File History` command.
