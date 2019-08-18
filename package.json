@@ -6,6 +6,7 @@
 		"email": "me@benmosher.com",
 		"url": "https://github.com/benmosher"
 	},
+	"publisher": "benmosher",
 	"description": "Quickly warp to Sublime Merge for common Git tasks.",
 	"version": "0.0.1",
 	"engines": {
